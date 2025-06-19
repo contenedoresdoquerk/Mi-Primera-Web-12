@@ -4,251 +4,87 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio de Ana Martínez</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
+    <title>Proyecto de Formulario</title>
 
-        nav {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            border-bottom: 2px solid #ff7235;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    <!-- Fuente  desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
-        nav h2 {
-            margin: 0;
-            color: #4756df;
-        }
+    <!-- Enlace a tu hoja de estilos externa -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href=" https://img.icons8.com/?size=100&id=80449&format=png&color=000000.png">" href="" type="image/x-icon">
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-            margin: 0;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            color: #ff7235;
-        }
-
-        header#hero {
-            padding: 4rem 2rem;
-            background-color: #eaefff;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .hero-img {
-            max-width: 300px;
-            border-radius: 1rem;
-        }
-
-        .biotext {
-            max-width: 600px;
-        }
-
-        .biotext h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #4756df;
-        }
-
-        .biotext p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        section {
-            padding: 3rem 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #4756df;
-        }
-
-        ul {
-            padding-left: 1rem;
-        }
-
-        #habilidades ul {
-            columns: 2;
-        }
-
-        article {
-            margin-bottom: 2rem;
-            background: #fff;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        article h3 {
-            color: #ff7235;
-            margin-top: 0;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        input,
-        textarea {
-            padding: 0.75rem;
-            border-radius: 0.5rem;
-            border: 1px solid #ccc;
-            font-size: 1rem;
-        }
-
-        button {
-            padding: 0.75rem 1.5rem;
-            background-color: #4756df;
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #3548c4;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background-color: #fafafa;
-            border-top: 1px solid #eee;
-            margin-top: 2rem;
-        }
-
-        .redes-sociales img {
-            width: 32px;
-            height: 32px;
-            margin: 0 5px;
-        }
-    </style>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Proyecto UF1304</h1>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="30"
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" />
 
-    <nav>
-        <h2>Ana Martínez</h2>
-        <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+            <label for="apellido1">Apellido 1</label>
+            <input type="text" id="apellido1" name="apellido1" required minlength="2" maxlength="30"
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" />
 
-    <header id="hero">
-        <img src="img/undraw_developer-activity_4zqd.svg" alt="Foto de Ana Martínez" class="hero-img" loading="lazy" />
-        <div class="biotext">
-            <h1>Hola, soy Ana Martínez</h1>
-            <p>Soy desarrolladora web y diseñadora especializada en crear experiencias digitales intuitivas y
-                atractivas.</p>
-            <p>Con un enfoque centrado en el usuario y pasión por los detalles visuales, convierto ideas en productos
-                funcionales y elegantes.</p>
-        </div>
-    </header>
+            <label for="apellido2">Apellido 2</label>
+            <input type="text" id="apellido2" name="apellido2" required minlength="2" maxlength="30"
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" />
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Desarrollo Frontend con HTML, CSS y JavaScript</li>
-            <li>Frameworks: React, Vue</li>
-            <li>Diseño UI/UX</li>
-            <li>Diseño gráfico y prototipado</li>
-            <li>Diseño de componentes reutilizables</li>
-            <li>Diseño de coches clásicos</li>
-            <li>Illustración digital</li>
-            <li>Trabajo en equipo y metodologías ágiles</li>
-        </ul>
-    </section>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required maxlength="50" />
 
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" maxlength="9"
+                title="Debe tener 9 cifras numéricas" />
 
-        <article>
-            <h3>Netflix Clone</h3>
-            <p>Una réplica funcional de la plataforma de streaming Netflix, desarrollada con React, usando componentes
-                reutilizables y estilos personalizados en CSS.</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
-        </article>
+            <label for="nif">NIF</label>
+            <input type="text" id="nif" name="nif" required pattern="[0-9]{8}[A-Za-z]" maxlength="9"
+                title="Formato: 8 dígitos seguidos de una letra." />
 
-        <article>
-            <h3>Camino de Santiago App</h3>
-            <p>Aplicación para registrar y visualizar información de peregrinos. Incluye mapa interactivo, perfil de
-                usuario y estadísticas del recorrido.</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
-        </article>
+            <label>Actividad</label>
+            <div class="radio-group">
+                <label><input type="radio" name="actividad" value="opcion1" required /> Opción 1</label>
+                <label><input type="radio" name="actividad" value="opcion2" /> Opción 2</label>
+                <label><input type="radio" name="actividad" value="opcion3" /> Opción 3</label>
+                <label><input type="radio" name="actividad" value="opcion4" /> Opción 4</label>
+            </div>
 
-        <article>
-            <h3>Gestor de Participantes</h3>
-            <p>Aplicación para gestionar listas de participantes en eventos o talleres. Incluye filtros, búsquedas y
-                exportación de datos.</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
-        </article>
-    </section>
+            <label for="mactividad">Actividad profesional</label>
+            <select id="mactividad" name="mactividad" required>
+                <option value="">Seleccione una opción</option>
+                <option value="profesion1">Profesión 1</option>
+                <option value="profesion2">Profesión 2</option>
+                <option value="profesion3">Profesión 3</option>
+                <option value="profesion4">Profesión 4</option>
+            </select>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="procesar_formulario.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+            <label>Rango serial</label>
+            <div class="range-group">
+                <label><input type="radio" name="rango" value="rango1" required /> Rango 1</label>
+                <label><input type="radio" name="rango" value="rango2" /> Rango 2</label>
+                <label><input type="radio" name="rango" value="rango3" /> Rango 3</label>
+                <label><input type="radio" name="rango" value="rango4" /> Rango 4</label>
+            </div>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            <label for="movilidad">Movilidad</label>
+            <select id="movilidad" name="movilidad" required>
+                <option value="">Seleccione una opción</option>
+                <option value="movilidad1">Movilidad 1</option>
+                <option value="movilidad2">Movilidad 2</option>
+                <option value="movilidad3">Movilidad 3</option>
+            </select>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+            <label for="presentacion">Presentación</label>
+            <textarea id="presentacion" name="presentacion" rows="4" maxlength="300"
+                placeholder="Escribe una breve presentación..."></textarea>
 
-            <button type="submit">Enviar</button>
+            <div class="button-group">
+                <button type="reset">Anular</button>
+                <button type="submit">Enviar</button>
+            </div>
         </form>
-        <p>Email: <a href="mailto:ana@email.com">ana@email.com</a></p>
-        <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Ana Martínez. Todos los derechos reservados.</p>
-        <div class="redes-sociales">
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
-        </div>
-    </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
 </body>
 
 </html>
