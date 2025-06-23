@@ -2,89 +2,134 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto de Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintería Artesanal</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-    <!-- Fuente  desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+        header,
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
 
-    <!-- Enlace a tu hoja de estilos externa -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/png" href=" https://img.icons8.com/?size=100&id=80449&format=png&color=000000.png">" href="" type="image/x-icon">
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+    </style>
 </head>
+<H1> Cooperativa Magia Madera Empresa <h1>
 
-<body>
-    <div class="container">
-        <h1>Proyecto UF1304</h1>
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="30"
-                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" />
+        <body>
+            <header>
 
-            <label for="apellido1">Apellido 1</label>
-            <input type="text" id="apellido1" name="apellido1" required minlength="2" maxlength="30"
-                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" />
+                <!-- Logo de la carpintería -->
+                <img src="https://www.zarla.com/images/zarla-magia-madera-1x1-2400x2400-20210809-r63gxcvytyvwbmtxxt6m.png?crop=1:1,smart&width=250&dpr=2"
+                    alt="Logo de la carpintería">
 
-            <label for="apellido2">Apellido 2</label>
-            <input type="text" id="apellido2" name="apellido2" required minlength="2" maxlength="30"
-                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" />
+                <!-- Imágenes del taller -->
+                <img src="https://img.freepik.com/fotos-premium/amplio-angulo-vision-taller-carpinteria-estudiantes-que-estudian-aprendizaje-universidad_625516-2700.jpg"
+                    alt="Taller de carpintería">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy52dBU_08qFH-umlFuZwL3H5BW4oi4Neahw&s"
+                    alt="Icono de carpintería">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required maxlength="50" />
+                <nav>
+                    <ul>
+                        <li><a href="#bienvenidos">Bienvenidos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#trabajos">Trabajos Realizados</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
+                        <li><a href="#redes">Redes Sociales</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" maxlength="9"
-                title="Debe tener 9 cifras numéricas" />
+            <main>
+                <!-- Bienvenida -->
+                <section id="bienvenidos">
+                    <h2>Bienvenidos</h2>
 
-            <label for="nif">NIF</label>
-            <input type="text" id="nif" name="nif" required pattern="[0-9]{8}[A-Za-z]" maxlength="9"
-                title="Formato: 8 dígitos seguidos de una letra." />
+                    <p>Bienvenido a nuestra carpintería artesanal, donde combinamos tradición y creatividad para
+                        ofrecerte los
+                        mejores trabajos en madera</p>
+                </section>
 
-            <label>Actividad</label>
-            <div class="radio-group">
-                <label><input type="radio" name="actividad" value="opcion1" required /> Opción 1</label>
-                <label><input type="radio" name="actividad" value="opcion2" /> Opción 2</label>
-                <label><input type="radio" name="actividad" value="opcion3" /> Opción 3</label>
-                <label><input type="radio" name="actividad" value="opcion4" /> Opción 4</label>
-            </div>
+                <!-- Servicios -->
+                <section id="servicios">
+                    <h2>Servicios</h2>
 
-            <label for="mactividad">Actividad profesional</label>
-            <select id="mactividad" name="mactividad" required>
-                <option value="">Seleccione una opción</option>
-                <option value="profesion1">Profesión 1</option>
-                <option value="profesion2">Profesión 2</option>
-                <option value="profesion3">Profesión 3</option>
-                <option value="profesion4">Profesión 4</option>
-            </select>
+                    <p>Todo tipo de servicios para el Hogar y su Empresa</p>
+                </section>
 
-            <label>Rango serial</label>
-            <div class="range-group">
-                <label><input type="radio" name="rango" value="rango1" required /> Rango 1</label>
-                <label><input type="radio" name="rango" value="rango2" /> Rango 2</label>
-                <label><input type="radio" name="rango" value="rango3" /> Rango 3</label>
-                <label><input type="radio" name="rango" value="rango4" /> Rango 4</label>
-            </div>
+                <!-- Trabajos realizados -->
+                <section id="trabajos">
 
-            <label for="movilidad">Movilidad</label>
-            <select id="movilidad" name="movilidad" required>
-                <option value="">Seleccione una opción</option>
-                <option value="movilidad1">Movilidad 1</option>
-                <option value="movilidad2">Movilidad 2</option>
-                <option value="movilidad3">Movilidad 3</option>
-            </select>
 
-            <label for="presentacion">Presentación</label>
-            <textarea id="presentacion" name="presentacion" rows="4" maxlength="300"
-                placeholder="Escribe una breve presentación..."></textarea>
+                    <img src="https://img.freepik.com/foto-gratis/concepto-carpinteria-hombre-trabajando_23-2147773337.jpg"
+                        alt="Trabajos realizados por la carpintería">
+                </section>
 
-            <div class="button-group">
-                <button type="reset">Anular</button>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
-</body>
+                <!-- Comodidad -->
+                <section id="comodidad">
+                    <h2>Todo tipo de trabajos para su comodidad</h2>
+                    <p>Para Que no se preocupe por nada hacemos su</p>
+                </section>
+
+                <!-- Contacto -->
+                <section id="contacto">
+                    <h2>Formulario de Contacto</h2>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </main>
+
+            <footer>
+
+                <!-- Redes sociales -->
+                <section id="redes">
+                    <h3>Síguenos en facebook</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494475.png" loading="lazy" alt="facebook"
+                        title="facebook" width="64" height="64">
+                </section>
+            </footer>
+        </body>
 
 </html>
