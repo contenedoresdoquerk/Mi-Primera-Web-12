@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Servicios - Carpintería El Roble</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Añadimos Font Awesome aquí en el head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -31,8 +33,9 @@
         <form action="enviar.php" method="post">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" required><br><br>
-             <label for="nombre">Apellidos:</label><br>
-            <input type="text" id="Apellidos" name="Apellidos" required><br><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
 
             <label for="email">Correo electrónico:</label><br>
             <input type="email" id="email" name="email" required><br><br>
@@ -45,7 +48,12 @@
     </section>
 
     <footer>
-        <p><a href="https://facebook.com/Maderas" target="_blank">Facebook</a></p>
+        <p>
+            <!-- Icono de Facebook -->
+            <a href="https://facebook.com/Carpinteria-el-Roble" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-square"></i> Facebook
+            </a>
+        </p>
         <a href="index.html">← Volver al Inicio</a> | <a href="contacto.html">Ir a Contacto →</a>
     </footer>
 
